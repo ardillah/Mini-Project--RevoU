@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Kalkulator Matematik Segitiga & Jajar Genjang</title>
+</head>
+<!--Hidden All form-->
+<body>
+	
+	<p>Hai Saudara, selamat Datang di Lab Program</p>
+	<p>Sebuah web sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+	<!--Input Base and Height of Triangle-->
+	<div class="form-Triangle-Area">
+		<h1>Luas Segitiga</h1>
+	</div>
+		<p><img src="assets/Segitiga.png" alt="Segitiga" width="450" height="250"></p>
+		<form>
+			<label for="alas">Alas:</label>
+			<input class="input-form" type="number" id="alas" name="alas" required>
+
+			<label for="tinggi">Tinggi:</label>
+			<input class="input-form" type="number" id="tinggi" name="tinggi" required>
+
+			<button class="calc-button" type="button" onclick="hitungLuasSegitiga()">Hitung</button>
+    
+  		</form>
+		<p>Luas Segitiga: <span id="luas"></span></p>
+	
+
+	<!--Input Side of Triangle-->
+	<div class="form-Triangle-circ">
+		<h1>Keliling Segitiga</h1>
+	</div>
+		<form>
+			<label for="s1">Sisi 1:</label>
+			<input class="input-form" type="number" id="s1" name="s1" required>
+
+			<label for="s2">Sisi 2:</label>
+			<input class="input-form" type="number" id="s2" name="s2" required>
+
+			<label for="s3">Sisi 3:</label>
+			<input class="input-form" type="number" id="s3" name="s3" required>
+		
+    		<button class="calc-button" type="button" onclick="hitungKelilingSegitiga()">Hitung</button>
+  		</form>
+  	<p>Keliling Segitiga: <span id="keliling"></span></p>
+ 	
+	
+	<!--Input Base and Height of parallelogram-->
+	<div class="form-parallelogram-area">
+	<h1>Luas Jajar Genjang</h1>
+	</div>
+		<p><img src="assets/Jajar Genjang.jpg" alt="Jajar Genjang"></p>
+		<form>
+			<label for="alas-jg">Alas</label>
+			<input class="input-form" type="number" id="alas-jg" name="alas-jg" required>
+		
+			<label for="tinggi-jg">Tinggi</label>
+			<input class="input-form" type="number" id="tinggi-jg" name="tinggi-jg" required>
+		
+			<button class="calc-button" type="button" onclick="hitungLuasJajarGenjang()">Hitung</button>
+		</form>
+	<p>Luas Jajar Genjang: <span id="luas-jg"></span></p>
+	
+
+	<!--Input Sides of parallelogram-->  
+	<div class="form-parallelogram-circ">
+	<h1>Keliling Jajar Genjang</h1>
+	</div>	
+	<form>
+		<label for="sisi1">Sisi1</label>
+		<input class="input-form" type="number" id="sisi1" name="sisi1" required>
+	
+		<label for="sisi2">Sisi2</label>
+		<input class="input-form" type="number" id="sisi2" name="sisi2" required>
+	
+		<button class="calc-button" type="button" onclick="hitungKelilingJajarGenjang()">Hitung</button>
+	</form>
+	<p>Keliling Jajar Genjang: <span id="keliling-jg"></span></p>
+	
+	
+	<p><button class="reset-button" type="button" onclick="Reset()">Reset</button></p>
+  <script src="script.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,38 @@
+.form-Triangle-Area {
+    background-color: #666ebe;
+  }
+
+.form-parallelogram-area {
+    background-color: #666ebe;
+}
+
+/*calculate button*/
+.calc-button {
+background-color: #666ebe;
+color: #faf8f8;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+}
+
+/*Reset Button*/
+.reset-button {
+    background-color: #9b4601;
+    color: #faf8f8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px; 
+}
+
+/*input-form*/
+.input-form {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+  }
